@@ -1,0 +1,33 @@
+ULTRON PRIME FreeLLMAPI — NOTICE
+================================
+
+This project is a fork of FreeLLMAPI:
+
+  Original project: FreeLLMAPI
+  Original author:  tashfeenahmed (https://github.com/tashfeenahmed)
+  Original repo:    https://github.com/tashfeenahmed/freellmapi
+  License:          MIT (see LICENSE)
+
+The FreeLLMAPI server, router, provider adapters, CLI, desktop app and
+dashboard were built by tashfeenahmed and contributors, and are used here
+under the MIT License. ULTRON PRIME's additions are:
+
+  - The ULTRON PRIME black / red / silver dashboard theme
+    (client/src/theme.tsx, client/src/index.css,
+    client/src/ultron-theme.css, client/index.html, client/src/App.tsx)
+  - Saved Playground presets
+    (client/src/lib/ultron-presets.ts,
+    client/src/components/playground/ultron-presets.tsx)
+  - The raw request/response inspector
+    (client/src/lib/ultron-request-record.ts,
+    client/src/components/playground/ultron-inspector.tsx)
+  - The per-model cost / latency estimate
+    (client/src/components/playground/ultron-model-estimate.tsx)
+  - Playground keyboard shortcuts (client/src/pages/PlaygroundPage.tsx)
+  - The ULTRON PRIME logo and banner
+    (client/public/assets/ultron-prime-logo.png,
+    client/public/assets/ultron-prime-banner.png)
+  - This README's ULTRON PRIME header, VIDEO_PLAN.md and this NOTICE file
+
+The ULTRON PRIME logo and banner artwork are ULTRON PRIME's own. No
+affiliation with, or endorsement by, the original project is claimed.
