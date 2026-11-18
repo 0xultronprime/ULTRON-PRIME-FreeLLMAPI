@@ -1,0 +1,72 @@
+/* ULTRON PRIME theme extras — everything ULTRON-specific that is not a
+   design-token override lives here, so the rebrand stays in one file.
+   Design tokens (colours, radii) live in index.css :root / .dark. */
+
+/* Red-tinted text selection, both themes. */
+::selection {
+  background: oklch(0.55 0.22 27 / 35%);
+}
+
+/* The wordmark next to the header logo: metallic silver gradient text. */
+.ultron-wordmark {
+  background: linear-gradient(180deg, oklch(0.98 0 0) 20%, oklch(0.72 0 0) 55%, oklch(0.9 0 0) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.08em;
+}
+
+/* PROTOCOL • BYPASS • OVERRIDE tagline under the wordmark. */
+.ultron-tagline {
+  color: oklch(0.58 0.23 27);
+  letter-spacing: 0.22em;
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* The "U" logo: a faint red orbit-ring glow so it reads as lit, not flat. */
+.ultron-logo-img {
+  filter: drop-shadow(0 0 6px oklch(0.58 0.23 27 / 55%));
+}
+
+/* Small section eyebrow used by ULTRON rail sections (Presets, Inspector). */
+.ultron-section-label {
+  color: oklch(0.58 0.23 27);
+  letter-spacing: 0.18em;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Keyboard-hint chips (shortcuts footer). */
+.ultron-kbd {
+  display: inline-block;
+  padding: 0 4px;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--muted-foreground);
+}
+
+/* Inspector: thin scrollbars so the raw JSON panel stays compact. */
+.ultron-inspector-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+/* Red pulse dot for "live" states (streaming, inspector recording). */
+@keyframes ultron-pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+.ultron-live-dot {
+  animation: ultron-pulse-dot 1.2s ease-in-out infinite;
+  background: oklch(0.58 0.23 27);
+}
